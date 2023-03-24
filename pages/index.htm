@@ -1,0 +1,11 @@
+url = "/"
+layout = "tailwindUi"
+title = "Homepage"
+
+[showsIndex]
+==
+{% put header %}
+    {{ theater_name }}<span class="font-thin"> | Coming next</span>
+{% endput %}
+
+{% component 'showsIndex' %}

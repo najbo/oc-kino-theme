@@ -1,0 +1,20 @@
+url = "/login/:code?"
+layout = "tailwindUi"
+title = "User login"
+
+[userProfile]
+
+[account]
+redirect = "dashboard/show"
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+
+[session]
+security = "all"
+==
+{% put header %}
+    Login page
+{% endput %}
+
+{% component 'userProfile' %}

@@ -1,0 +1,31 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html class="h-full bg-gray-100">
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+    <body class="h-full {{ 'page-'~this.page.id }}">
+
+	        <!-- Header -->
+	        <header id="layout-header">
+	            {% partial 'site/header_alternative' %}
+	        </header>
+
+	        <!-- Sub Header -->
+	        <header id="layout-subheader">
+	            {% partial 'site/subheader' %}
+	        </header>
+
+	        <!-- Content -->
+	        <section id="layout-content">
+	            {% partial 'site/content' %}
+	        </section>
+
+	        <!-- Footer -->
+	        <footer id="layout-footer">
+	            {% partial 'site/footer' %}
+	        </footer>
+
+    </body>
+</html>

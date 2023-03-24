@@ -1,0 +1,17 @@
+url = "/dashboard"
+layout = "tailwindUi"
+title = "My Dashbaord"
+
+[session]
+security = "user"
+allowedUserGroups[] = "registered"
+redirect = "account/login"
+
+[dashboard]
+
+==
+{% put header %}
+     My Dashboard
+{% endput %}
+
+{% component 'dashboard' %}

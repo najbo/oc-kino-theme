@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<title>Kino - {{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="title" content="{{ this.page.meta_title }}">
+<meta name="author" content="Jan Boesch">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="October CMS">
+<link rel="icon" type="image/png" href="{{ 'assets/images/camera.svg'|theme }}">
+<link href="{{ 'assets/dist/css/style.css'|theme }}" rel="stylesheet">
+<!--<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>-->
+<!--<script src="//unpkg.com/alpinejs" defer></script>-->
+<script src="{{ 'assets/dist/js/app.js'|theme }}"></script>
+{% styles %}
+
+{% framework extras turbo %}
+{% scripts %}
+

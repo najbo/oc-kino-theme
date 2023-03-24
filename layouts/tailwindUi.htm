@@ -1,0 +1,38 @@
+description = "TailwindUi layout"
+
+[session]
+security = "all"
+
+[account]
+
+==
+==
+<!DOCTYPE html>
+<html class="h-full bg-gray-100">
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+    <body class="h-full">
+		<div class="min-h-full">
+
+	        <!-- Header -->
+	        <header id="layout-navigation">
+	            {% partial 'site/nav' %}
+	        </header>
+
+	        <div class="py-10">
+
+	        	<!--  Header -->
+		        <header id="layout-header">
+		            {% partial 'site/header' %}
+		        </header>
+
+		        <!-- Content -->
+		        <section id="layout-main">
+		            {% partial 'site/main' %}
+		        </section>
+
+		    </div>
+		</div>
+    </body>
+</html>
