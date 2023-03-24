@@ -668,6 +668,9 @@ select {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   top: 0px;
   right: 0px;
@@ -682,6 +685,9 @@ select {
 }
 .right-0 {
   right: 0px;
+}
+.top-0 {
+  top: 0px;
 }
 .isolate {
   isolation: isolate;
@@ -1089,12 +1095,6 @@ select {
 .pb-3 {
   padding-bottom: 0.75rem;
 }
-.pb-4 {
-  padding-bottom: 1rem;
-}
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
 .pb-9 {
   padding-bottom: 2.25rem;
 }
@@ -1121,9 +1121,6 @@ select {
 }
 .pt-64 {
   padding-top: 16rem;
-}
-.pt-3 {
-  padding-top: 0.75rem;
 }
 .text-center {
   text-align: center;
